@@ -1,0 +1,249 @@
+/* pallete */
+
+:root {
+    --primary: #262B39;
+    --secondary: #F4F6FF;
+    --red: #FF3636;
+    --green: #36FE62;
+    --blue: #366EFE;
+    --yellow: #FED236;
+    --pink: #EE36FE;
+}
+
+/* defaults */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+}
+
+/* game */
+
+.container {
+    width: 100%;
+    height: 100%;
+    
+    /* padding: 1.5rem 1rem; */
+    padding: clamp(1rem, 3.077vw + 0.308rem, 4rem) 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.game {
+    width: 100%;
+    max-width: 22rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.header {
+    width: 100%;
+    height: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 1rem;
+}
+
+/* next section */
+
+.next {
+    flex: 1;
+    min-width: 7.75rem;
+    height: 100%;
+    
+    padding: 0.75rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+}
+
+.next__heading {
+    height: 100%;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    color: var(--secondary);
+    align-self: flex-start;
+}
+
+.next__content {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+#next__shape {
+    width: 3.25rem;
+    height: 100%;
+    background-color: red;
+}
+
+/* score section */
+
+.score__content {
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    color: var(--secondary);
+}
+
+.score {
+    flex: 1;
+    height: 100%;
+    
+    padding: 0.75rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+}
+
+.score__heading {
+    width: 100%;
+    height: 100%;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    color: var(--secondary);
+    align-self: flex-start;
+}
+
+.score__content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+/* pause button */
+
+.pause_btn {
+    width: 4rem;
+    min-width: 4rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+}
+
+.pause_btn img {
+    height: 1.25rem;
+}
+
+/* board section */
+
+.board {
+    width: 100%;
+    flex: 1;
+
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+}
+
+.board canvas {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+}
+
+/* control section */
+.control {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deactive {
+    display: none;
+}
+
+.control .left {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.control .right {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    
+    gap: 1rem;
+}
+
+.rotate_btn, .left_btn, .down_btn, .right_btn {
+    width: 4rem;
+    height: 4rem;
+
+    padding: 1.375rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+}
+
+.rotate_btn img, .left_btn img, .down_btn img, .right_btn img {
+    width: 100%;
+    height: 100%;
+}
